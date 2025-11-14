@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Projects\\MedicineSystemAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1F1B1E4E-25C3-483F-9998-CF486A7AF80E}|MedicineSystemAPI.csproj|c:\\projects\\medicinesystemapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1F1B1E4E-25C3-483F-9998-CF486A7AF80E}|MedicineSystemAPI.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F1B1E4E-25C3-483F-9998-CF486A7AF80E}|MedicineSystemAPI.csproj|c:\\projects\\medicinesystemapi\\repositories\\prescriptionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F1B1E4E-25C3-483F-9998-CF486A7AF80E}|MedicineSystemAPI.csproj|solutionrelative:repositories\\prescriptionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F1B1E4E-25C3-483F-9998-CF486A7AF80E}|MedicineSystemAPI.csproj|c:\\projects\\medicinesystemapi\\controllers\\prescriptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F1B1E4E-25C3-483F-9998-CF486A7AF80E}|MedicineSystemAPI.csproj|solutionrelative:controllers\\prescriptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F1B1E4E-25C3-483F-9998-CF486A7AF80E}|MedicineSystemAPI.csproj|c:\\projects\\medicinesystemapi\\interfaces\\iprescriptionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F1B1E4E-25C3-483F-9998-CF486A7AF80E}|MedicineSystemAPI.csproj|solutionrelative:interfaces\\iprescriptionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F1B1E4E-25C3-483F-9998-CF486A7AF80E}|MedicineSystemAPI.csproj|c:\\projects\\medicinesystemapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F1B1E4E-25C3-483F-9998-CF486A7AF80E}|MedicineSystemAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Projects\\MedicineSystemAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Projects\\MedicineSystemAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAB8AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-11T15:42:57.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Projects\\MedicineSystemAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Projects\\MedicineSystemAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T13:35:01.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PrescriptionRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\MedicineSystemAPI\\Repositories\\PrescriptionRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\PrescriptionRepository.cs",
+              "ToolTip": "C:\\Projects\\MedicineSystemAPI\\Repositories\\PrescriptionRepository.cs",
+              "RelativeToolTip": "Repositories\\PrescriptionRepository.cs",
+              "ViewState": "AQIAAHQAAAAAAAAAAAAcwPoAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T09:30:24.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IPrescriptionRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\MedicineSystemAPI\\Interfaces\\IPrescriptionRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IPrescriptionRepository.cs",
+              "ToolTip": "C:\\Projects\\MedicineSystemAPI\\Interfaces\\IPrescriptionRepository.cs",
+              "RelativeToolTip": "Interfaces\\IPrescriptionRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T11:48:04.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PrescriptionController.cs",
+              "DocumentMoniker": "C:\\Projects\\MedicineSystemAPI\\Controllers\\PrescriptionController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PrescriptionController.cs",
+              "ToolTip": "C:\\Projects\\MedicineSystemAPI\\Controllers\\PrescriptionController.cs",
+              "RelativeToolTip": "Controllers\\PrescriptionController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T10:13:53.4Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
