@@ -7,6 +7,6 @@ namespace MedicineSystemAPI.Interfaces
     {
         Task<List<TblDoctor>> GetDoctors(string doctorName, string SIP, CancellationToken cancellationToken);
         Task<bool> AddDoctors(TblDoctor input, CancellationToken cancellationToken);
-        Task<bool> UpdateDoctors(TblDoctor data, CancellationToken cancellationToken);
+        Task<int> UpdateDoctors(TblDoctor data, CancellationToken cancellationToken);
     }
 }

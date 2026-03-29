@@ -51,25 +51,25 @@ namespace MedicineSystemAPI.Repositories
             return Result;
         }
 
-        public async Task<bool> UpdateDoctors(TblDoctor data, CancellationToken cancellationToken)
+        public async Task<int> UpdateDoctors(TblDoctor data, CancellationToken cancellationToken)
         {
-            bool Result = false;
+            int Result = 0;
             try
             {
-                _context.TblDoctors.Where(t => t.DoctorId == data.DoctorId)
+                Result = await _context.TblDoctors.Where(t => t.DoctorId == data.DoctorId)
                     .ExecuteUpdateAsync(s =>
                         s.SetProperty(v => v.Name, data.Name)
                         .SetProperty(v => v.Speciality, data.Speciality)
                         .SetProperty(v => v.Sip, data.Sip)
                         .SetProperty(v => v.Note, data.Note)
-                        .SetProperty(v => v.UpdateDate, DateTime.Now)
+                        .SetProperty(v => v.UpdateDate, DateTime.Now), cancellationToken
                     );
 
-                await _context.SaveChangesAsync(cancellationToken);
+                //await _context.SaveChangesAsync(cancellationToken);
 
                 _context.ChangeTracker.Clear();
 
-                Result = true;
+                //Result = true;
             }
             catch (Exception ex)
             {
