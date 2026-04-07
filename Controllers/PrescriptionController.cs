@@ -1,6 +1,7 @@
 ﻿using MedicineSystemAPI.CustomModels;
 using MedicineSystemAPI.Interfaces;
 using MedicineSystemAPI.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MedicineSystemAPI.Controllers
@@ -24,13 +25,16 @@ namespace MedicineSystemAPI.Controllers
         }
 
         [HttpGet]
+        [AllowAnonymous]
         public async Task<ActionResult<TblPrescription_OrderOutput>> GetPrescription(string refNumber, string Name, CancellationToken cancellationToken)
         {
             var datas = await _repository.GetPrescription(refNumber, Name, cancellationToken);
             return Ok(datas);
         }
 
+        [Authorize]
         [HttpGet]
+        //[AllowAnonymous]
         [Route("status")]
         public async Task<ActionResult<List<TblStatus>>> GetPrescriptionStatus( CancellationToken cancellationToken)
         {
