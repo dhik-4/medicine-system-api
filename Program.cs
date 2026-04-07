@@ -2,6 +2,7 @@ using MedicineSystemAPI.Interfaces;
 using MedicineSystemAPI.Models;
 using MedicineSystemAPI.Repositories;
 using MedicineSystemAPI.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
@@ -84,6 +85,41 @@ builder.Services.AddAuthentication("Bearer")
             IssuerSigningKey = new SymmetricSecurityKey(key),
 
             ClockSkew = TimeSpan.Zero // no extra time after expiration
+        };
+
+        options.Events = new JwtBearerEvents
+        {
+            OnAuthenticationFailed = async context =>
+            {
+                if (context.Exception.GetType() == typeof(SecurityTokenExpiredException))
+                {
+                    context.Response.StatusCode = 401;
+                    context.Response.ContentType = "application/json";
+
+                    var result = System.Text.Json.JsonSerializer.Serialize(new
+                    {
+                        message = "Token expired"
+                    });
+
+                    await context.Response.WriteAsync(result);
+                }
+            },
+
+            OnChallenge = async context =>
+            {
+                // Skip default behavior
+                context.HandleResponse();
+
+                context.Response.StatusCode = 401;
+                context.Response.ContentType = "application/json";
+
+                var result = System.Text.Json.JsonSerializer.Serialize(new
+                {
+                    message = "Unauthorized - Token is missing or invalid"
+                });
+
+                await context.Response.WriteAsync(result);
+            }
         };
     });
 
